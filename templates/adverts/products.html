@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<main role="main">
+  <h1>Выберите категорию для подписки</h1>
+  <hr>
+  <div>
+    <h2><label >Категории первого уровня</label></h2>
+    Покупая подписку третьего уровня, вы получаете доступ ко всем подкатегориям
+    <br>
+    <br>
+    <a class ="btn btn-primary" role="button" href="{% url 'adverts:product' 1%}">Купить подписку</a>
+  </div>
+  <hr>
+  <div>
+    <h2><label >Категории второго уровня</label></h2>
+    Покупая подписку второго уровня, вы получаете доступ ко всем подкатегориям
+    <br>
+    <br>
+    <a class ="btn btn-primary" role="button" href="{% url 'adverts:product' 2%}">Купить подписку</a>
+  </div>
+  <hr>
+  <div>
+    <h3><label >Категории третьего уровня</label></h3>
+    Покупая подписку третьего уровня, вы получаете доступ к объявлениям купленной категории
+    <br>
+    <br>
+    <a class ="btn btn-primary" role="button" href="{% url 'adverts:product' 3%}">Купить подписку</a>
+  </div>
+
+</main>
+
+
+{% endblock %}
